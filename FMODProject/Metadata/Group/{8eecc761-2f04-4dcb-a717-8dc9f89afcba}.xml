@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{8eecc761-2f04-4dcb-a717-8dc9f89afcba}">
+		<property name="color">
+			<value>Blue Light 1</value>
+		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>Spatialised</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ceddad9c-154c-4de1-a275-320cc0df534d}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{980f9b41-3ec7-48f6-955a-c3af22fd3c22}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d320eb98-3d4a-4cd9-a001-fdb4e071c58e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ceddad9c-154c-4de1-a275-320cc0df534d}">
+		<relationship name="effects">
+			<destination>{5847d714-34d2-4b43-9271-9f8e1d63d036}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{980f9b41-3ec7-48f6-955a-c3af22fd3c22}" />
+	<object class="MixerBusFader" id="{5847d714-34d2-4b43-9271-9f8e1d63d036}" />
+</objects>

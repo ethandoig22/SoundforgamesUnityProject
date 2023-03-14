@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{2217614a-0d94-4780-8de2-47affef0bf57}">
+		<property name="name">
+			<value>DroidAngularVelocity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8eb5e6f1-8803-4ecd-84cf-3d9a34450fed}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{932defa0-f747-4cc2-913c-baeefdf80838}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{932defa0-f747-4cc2-913c-baeefdf80838}">
+		<property name="maximum">
+			<value>1000</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

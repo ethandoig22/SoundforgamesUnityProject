@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - TowerInterior
+  - ZoomIn
+  - CubeLeft
+  - CubeRight
+  - Root
+  - Branch
+  - CubeParent
+  - Particle
+  - Enemy
+  - CubeChild
+  - CubeChild2
+  - CubeChild3
+  - CubeChild4
+  - InnerBeam
+  - OutterBeam
+  - Scanner
+  - PickUp
+  - Mole
+  - ShellCreatureHelmet
+  - ShellCreatureHead
+  - EnemyHitZone
+  - PlayerProjectile
+  - Cactus
+  - FoodSource
+  - Hive
+  - Pheromone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - PostProcessing
+  - Rock
+  - Sand
+  - Metal
+  - LaserParticle
+  - MiniMap
+  - TreeCollider
+  - RadiationZone
+  - Projectile
+  - Scanner
+  - HeadLamp
+  - Wind
+  - Enemy
+  - EnemyProjectile
+  - AmbientOcc
+  - Building
+  - Cactus
+  - Player
+  - Bottle
+  - Boundary
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

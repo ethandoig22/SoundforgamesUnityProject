@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{44d3071a-5ade-4513-8693-c8a78f8e90da}">
+		<property name="name">
+			<value>MoleMovement</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8dddc191-0624-4dca-92d9-a7a0e6b865fc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f103262e-8628-4c03-8fd9-b45486d3cdc5}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f103262e-8628-4c03-8fd9-b45486d3cdc5}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>25</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{2ff34a4f-738a-4b24-b1a4-b0e1b70b4d9d}">
+		<property name="name">
+			<value>JazzPlant</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{750debb7-ebd4-4708-8943-19b2063fdd61}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{06d5eb9b-8e2f-48d3-80be-6e22b9a8369b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8eecc761-2f04-4dcb-a717-8dc9f89afcba}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{750debb7-ebd4-4708-8943-19b2063fdd61}">
+		<relationship name="effects">
+			<destination>{e3985527-57c6-40dd-962c-a7b2ca10cc7d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{06d5eb9b-8e2f-48d3-80be-6e22b9a8369b}" />
+	<object class="MixerBusFader" id="{e3985527-57c6-40dd-962c-a7b2ca10cc7d}" />
+</objects>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{1fc26fbb-095b-44ce-9ce7-f004bea15e33}">
+		<property name="name">
+			<value>TreeRotation</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a418e0de-c7d0-05c9-280a-b529dc02e12e}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{faaa3d1d-b728-4d20-b04f-33163838e509}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{faaa3d1d-b728-4d20-b04f-33163838e509}">
+		<property name="minimum">
+			<value>-1</value>
+		</property>
+		<property name="initialValue">
+			<value>-1</value>
+		</property>
+	</object>
+</objects>

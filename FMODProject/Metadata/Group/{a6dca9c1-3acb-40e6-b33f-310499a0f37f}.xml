@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{a6dca9c1-3acb-40e6-b33f-310499a0f37f}">
+		<property name="color">
+			<value>Blue Light 2</value>
+		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>ExternalZone</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{9be45eac-6a43-4be8-bee8-7c2c7b4d27a0}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{0ab17089-92da-4e43-9872-5b0672043bcd}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3d9da0e5-2528-4821-a609-8d5370900eb7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{9be45eac-6a43-4be8-bee8-7c2c7b4d27a0}">
+		<relationship name="effects">
+			<destination>{d5d737d3-70da-48a3-a869-8a61fdee349d}</destination>
+			<destination>{fae7cad5-8f70-455c-bbd3-e9128c578a51}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{0ab17089-92da-4e43-9872-5b0672043bcd}" />
+	<object class="MixerBusFader" id="{d5d737d3-70da-48a3-a869-8a61fdee349d}" />
+	<object class="MultibandEqEffect" id="{fae7cad5-8f70-455c-bbd3-e9128c578a51}">
+		<property name="qualityA">
+			<value>0.100000001</value>
+		</property>
+		<relationship name="automators">
+			<destination>{1fc699a8-8f17-499a-b2ee-c4a9abf03e15}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{1fc699a8-8f17-499a-b2ee-c4a9abf03e15}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>frequencyA</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{0fbd0536-4f52-43d5-b2ae-124c0659ccf3}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{0fbd0536-4f52-43d5-b2ae-124c0659ccf3}">
+		<relationship name="parameter">
+			<destination>{362127ac-a587-47da-868a-fc86d66a6677}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{35fd2105-7069-48c3-bd51-c9c832e7e0f4}</destination>
+			<destination>{2403a785-c699-441b-ae16-ff798c7e845a}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{35fd2105-7069-48c3-bd51-c9c832e7e0f4}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>20</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{2403a785-c699-441b-ae16-ff798c7e845a}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>22000</value>
+		</property>
+	</object>
+</objects>

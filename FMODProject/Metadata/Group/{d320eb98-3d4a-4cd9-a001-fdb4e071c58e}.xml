@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{d320eb98-3d4a-4cd9-a001-fdb4e071c58e}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>SFX</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{fd2b0385-e5e7-4c14-8348-7ada37283192}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{e0d8b0f4-1b05-4412-9cdd-9994818597ad}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{af9d027a-3a1f-49a8-a9ef-4cbe20673632}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{fd2b0385-e5e7-4c14-8348-7ada37283192}">
+		<relationship name="effects">
+			<destination>{43cd7d8b-069f-4c38-8440-d661a5d39e10}</destination>
+			<destination>{a7a9dc9e-2051-44f7-8925-0ddb318ebacb}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{e0d8b0f4-1b05-4412-9cdd-9994818597ad}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="MixerSend" id="{43cd7d8b-069f-4c38-8440-d661a5d39e10}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{a5dac928-eb57-4187-ada7-f38d83bcaf3d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{a7a9dc9e-2051-44f7-8925-0ddb318ebacb}" />
+</objects>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b170675b-2e6e-4800-b7a6-f2d5f49259c7}">
+		<property name="name">
+			<value>Scanning</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8eb5e6f1-8803-4ecd-84cf-3d9a34450fed}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0c463f99-aaa5-4bbd-b607-d85adc564ab2}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0c463f99-aaa5-4bbd-b607-d85adc564ab2}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

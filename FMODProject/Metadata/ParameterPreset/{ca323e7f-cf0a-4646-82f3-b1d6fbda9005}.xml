@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ca323e7f-cf0a-4646-82f3-b1d6fbda9005}">
+		<property name="name">
+			<value>DroidVelocity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8eb5e6f1-8803-4ecd-84cf-3d9a34450fed}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1205418e-5eee-447c-9330-c2e714fe0227}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1205418e-5eee-447c-9330-c2e714fe0227}">
+		<property name="maximum">
+			<value>200</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

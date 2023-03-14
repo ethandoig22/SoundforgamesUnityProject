@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{6d4b7f46-0d54-4dd6-b6c1-03eb5ce59a84}">
+		<property name="name">
+			<value>AntVelocity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a418e0de-c7d0-05c9-280a-b529dc02e12e}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cd6cad4b-2e71-45d5-a1fb-9e3279764701}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cd6cad4b-2e71-45d5-a1fb-9e3279764701}">
+		<property name="maximum">
+			<value>50</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

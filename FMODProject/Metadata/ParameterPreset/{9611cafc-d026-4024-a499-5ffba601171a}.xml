@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{9611cafc-d026-4024-a499-5ffba601171a}">
+		<property name="name">
+			<value>ChillVolume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3e59dc97-b9c6-4910-89b6-66f75e53bb5c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2983c002-5417-471a-8da7-84233f5d0f75}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2983c002-5417-471a-8da7-84233f5d0f75}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
