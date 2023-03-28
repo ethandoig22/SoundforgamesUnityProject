@@ -91,12 +91,18 @@ Triggered: On Start
 			<destination>{520fbe57-299f-496b-84af-9859952dc201}</destination>
 			<destination>{ca0272fb-b7b4-497b-b373-7edb6225bb41}</destination>
 		</relationship>
+		<relationship name="modules">
+			<destination>{c6db555d-2f5c-44a4-a93d-39af5af63382}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{77cbadd2-c221-4d40-b8e7-d03f77e72b7b}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{04bcbe18-9498-4c45-b2d5-48b102df3d2f}" />
 	<object class="ParameterProxy" id="{5ce538f8-c257-495e-8712-41f3d818e801}">
+		<relationship name="modules">
+			<destination>{c6db555d-2f5c-44a4-a93d-39af5af63382}</destination>
+		</relationship>
 		<relationship name="preset">
 			<destination>{347fe919-e0d0-4697-865c-28419c1be0c7}</destination>
 		</relationship>
@@ -131,6 +137,14 @@ Triggered: On Start
 	<object class="AutomationTrack" id="{ca0272fb-b7b4-497b-b373-7edb6225bb41}">
 		<relationship name="automator">
 			<destination>{a830ac1d-4c67-4844-9388-1e2e4336c1ce}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{c6db555d-2f5c-44a4-a93d-39af5af63382}">
+		<property name="length">
+			<value>0.38</value>
+		</property>
+		<relationship name="event">
+			<destination>{14346592-26b7-4ce3-a4ba-dab70898f150}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{77cbadd2-c221-4d40-b8e7-d03f77e72b7b}">
