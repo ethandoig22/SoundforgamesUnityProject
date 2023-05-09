@@ -14,7 +14,7 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        updateTimePeriod(2);
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class TimeManager : MonoBehaviour
 
     public void updateTimePeriod(int periodIndex) 
     {
-        FMODTimeEvent.SetParameter("NewTimeOfDay", periodIndex);
+        FMODTimeEvent.SetParameter("TimeOfDay", periodIndex);
         if (periodIndex == 0)
         {
             periodOfTheDay = "Night";

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{cdc11793-d3fe-49ea-91d1-b4d2093d90b4}">
 		<property name="assetPath">
-			<value>gieger counter fast.wav</value>
+			<value>Geiger Counter/gieger counter fast.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

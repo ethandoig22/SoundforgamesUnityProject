@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{76fff5f1-df76-4e7c-81af-f781d2c104e6}">
+	<object class="AudioFile" id="{8f44b907-5263-4daf-804c-47d76bfaf2a2}">
 		<property name="assetPath">
-			<value>Geiger Counter/555926__cookiespolicy__geiger-counter-hotspot-long.wav</value>
+			<value>Footsteps/Rock/Step 1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>96</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>7.3778958333333335</value>
+			<value>0.33514739229024942</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{4c43130b-9186-4fb6-9d65-a9acdac70927}</destination>

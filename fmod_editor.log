@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002D8754D72F8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D2E18121D8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,13 +20,39 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 141)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 141)
+[LOG] SoundI::release                          :  (000001D2E3847BE8)
+[LOG] SoundI::release                          :     Step 2 (000001CFC8FC52C8)
+[LOG] SoundI::release                          :  (000001D2E3847798)
+[LOG] SoundI::release                          :     Step 3 (000001D20B637A68)
+[LOG] SoundI::release                          :  (000001D2E3846EF8)
+[LOG] SoundI::release                          :     Step 4 (000001D20B638288)
+[LOG] SoundI::release                          :  (000001D2E38471D8)
+[LOG] SoundI::release                          :     Step 5 (000001D20B637F48)
+[LOG] SoundI::release                          :  (000001D2E3847A78)
+[LOG] SoundI::release                          :     Step 1 (000001D20B637DA8)
+[LOG] SoundI::release                          :  (000001D2E3849178)
+[LOG] SoundI::release                          :     Step 2 (000001D1E6E21578)
+[LOG] SoundI::release                          :  (000001D2E38467C8)
+[LOG] SoundI::release                          :     Step 3 (000001CFC8FC5948)
+[LOG] SoundI::release                          :  (000001D2E3849CF8)
+[LOG] SoundI::release                          :     Step 4 (000001D1E6E21D98)
+[LOG] SoundI::release                          :  (000001D2E3847908)
+[LOG] SoundI::release                          :     Step 5 (000001D1E6E21A58)
+[LOG] SoundI::release                          :  (000001D2E384A598)
+[LOG] SoundI::release                          :     Step 6 (000001D1E6E21BF8)
+[LOG] SoundI::release                          :  (000001D2E3846938)
+[LOG] SoundI::release                          :     Step 7 (000001D20B638768)
+[LOG] SoundI::release                          :  (000001D2E3846C18)
+[LOG] SoundI::release                          :     Step 1 (000001D2E13E78F8)
+[LOG] SoundI::release                          :  (000001D2E3849E68)
+[LOG] SoundI::release                          :     gieger counter slow (000001D1E4EE3758)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

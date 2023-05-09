@@ -83,9 +83,6 @@ Triggered: When the feet of the character animation touch the floor.
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
-		<property name="priority">
-			<value>3</value>
-		</property>
 		<property name="dopplerScale">
 			<value>460</value>
 		</property>
@@ -95,12 +92,20 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="MarkerTrack" id="{54dbb3de-3613-4a87-8da2-57a892ba1d2d}" />
 	<object class="GroupTrack" id="{364bdf2d-8c1b-447d-a6b7-0c882337e03a}">
+		<relationship name="modules">
+			<destination>{2ff6d4d6-ad96-4cff-8daf-e7d09c17330d}</destination>
+			<destination>{dd3cb209-9751-4d5d-9ec3-5c3646f1cd56}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{cab8585f-4802-40ae-b8c8-8f822593975f}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{d372e12b-0db4-49f6-ac02-ebc5cb0fd144}" />
 	<object class="ParameterProxy" id="{3541a49a-849e-046f-2c6a-d5f71f548e2b}">
+		<relationship name="modules">
+			<destination>{2ff6d4d6-ad96-4cff-8daf-e7d09c17330d}</destination>
+			<destination>{dd3cb209-9751-4d5d-9ec3-5c3646f1cd56}</destination>
+		</relationship>
 		<relationship name="preset">
 			<destination>{5decf701-7e48-4848-b796-416ec40eb26c}</destination>
 		</relationship>
@@ -122,6 +127,19 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bb9c6e68-8990-41bf-8380-209255d19884}" />
+	<object class="EventSound" id="{2ff6d4d6-ad96-4cff-8daf-e7d09c17330d}">
+		<relationship name="event">
+			<destination>{ed0574f4-1dd6-4742-b5d0-52fa08af482c}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{dd3cb209-9751-4d5d-9ec3-5c3646f1cd56}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="event">
+			<destination>{4918cfa2-a946-4312-8d74-9c7b482ddde8}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{cab8585f-4802-40ae-b8c8-8f822593975f}">
 		<property name="name">
 			<value>Audio 1</value>

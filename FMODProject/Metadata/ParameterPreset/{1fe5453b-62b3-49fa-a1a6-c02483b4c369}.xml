@@ -21,5 +21,53 @@
 		<property name="seekSpeed">
 			<value>0.45000001788139343</value>
 		</property>
+		<relationship name="automators">
+			<destination>{f4ea0039-22b2-4e7e-ae70-1c218aa7653b}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{f4ea0039-22b2-4e7e-ae70-1c218aa7653b}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{61889a7b-aa90-444b-8273-e07aeb9c90d8}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{61889a7b-aa90-444b-8273-e07aeb9c90d8}">
+		<relationship name="parameter">
+			<destination>{4ad59307-2c9a-498d-b318-3a35d01c3b9c}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{ab3603bf-0466-4e21-9d35-d1a5fa48b707}</destination>
+			<destination>{922fee12-69f7-4e96-861d-c4096ae67d1f}</destination>
+			<destination>{1dc2cdf8-021d-4ce4-a6cd-46516529f3be}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{ab3603bf-0466-4e21-9d35-d1a5fa48b707}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>3</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{922fee12-69f7-4e96-861d-c4096ae67d1f}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0.150000006</value>
+		</property>
+		<property name="curveShape">
+			<value>0.0715448037</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{1dc2cdf8-021d-4ce4-a6cd-46516529f3be}">
+		<property name="position">
+			<value>0.278248585299745</value>
+		</property>
+		<property name="value">
+			<value>0.150000006</value>
+		</property>
 	</object>
 </objects>

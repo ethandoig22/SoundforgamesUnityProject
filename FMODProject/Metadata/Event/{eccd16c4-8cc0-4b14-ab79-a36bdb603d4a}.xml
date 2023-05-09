@@ -69,11 +69,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<destination>{3d9da0e5-2528-4821-a609-8d5370900eb7}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{0d48c761-6e7a-4330-b72e-74dbd457ee65}">
-		<property name="priority">
-			<value>3</value>
-		</property>
-	</object>
+	<object class="EventAutomatableProperties" id="{0d48c761-6e7a-4330-b72e-74dbd457ee65}" />
 	<object class="MarkerTrack" id="{ebd8b391-2de3-4814-a3e6-a5fff76620a5}" />
 	<object class="GroupTrack" id="{0f196c46-8773-445c-a48a-a5dfb7674877}">
 		<relationship name="modules">
@@ -140,6 +136,9 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ed292531-d457-4399-b5cd-b2d327282deb}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>

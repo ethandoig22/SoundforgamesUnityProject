@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{32360e75-0504-445b-9505-d9a3f75f59ae}">
 		<property name="assetPath">
-			<value>gieger counter slow.wav</value>
+			<value>Geiger Counter/gieger counter slow.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>
