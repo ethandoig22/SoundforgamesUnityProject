@@ -167,10 +167,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638192447722647308
+  lastModified: 638193159551328786
   FileSizes:
   - Name: Desktop
-    Value: 223840
+    Value: 1346336
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638192447721679456
+  lastModified: 638193159546698089
   FileSizes:
   - Name: Desktop
     Value: 4238
@@ -425,6 +425,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 10
   Length: 0
+--- !u!114 &-4483237052072484139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Weather/Wind
+  m_EditorClassIdentifier: 
+  Name: Wind
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1071329013
+    data2: 3631439134
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4228794227554585268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,7 +551,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: 8960757795526132968}
@@ -726,7 +750,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638192447722647308
+  cacheTime: 638193159551328786
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -911,12 +935,13 @@ MonoBehaviour:
     Data4: -326572916
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: -8844923236937417853}
   - {fileID: -2250725151075663136}
+  - {fileID: -4483237052072484139}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -935,7 +960,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638192447721749276
+  lastModified: 638193159546744070
   FileSizes:
   - Name: Desktop
     Value: 1416
@@ -1065,10 +1090,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638192447721601575
+  lastModified: 638193159546647935
   FileSizes:
   - Name: Desktop
-    Value: 63872
+    Value: 86112
   Exists: 1
 --- !u!114 &4490606575963264758
 MonoBehaviour:

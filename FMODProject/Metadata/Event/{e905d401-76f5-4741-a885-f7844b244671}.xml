@@ -95,6 +95,7 @@ Triggered: When the feet of the character animation touch the floor.
 		<relationship name="modules">
 			<destination>{2ff6d4d6-ad96-4cff-8daf-e7d09c17330d}</destination>
 			<destination>{dd3cb209-9751-4d5d-9ec3-5c3646f1cd56}</destination>
+			<destination>{c8f0edfb-b4dd-41bb-8887-782bdd47a3e6}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{cab8585f-4802-40ae-b8c8-8f822593975f}</destination>
@@ -105,6 +106,7 @@ Triggered: When the feet of the character animation touch the floor.
 		<relationship name="modules">
 			<destination>{2ff6d4d6-ad96-4cff-8daf-e7d09c17330d}</destination>
 			<destination>{dd3cb209-9751-4d5d-9ec3-5c3646f1cd56}</destination>
+			<destination>{c8f0edfb-b4dd-41bb-8887-782bdd47a3e6}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{5decf701-7e48-4848-b796-416ec40eb26c}</destination>
@@ -138,6 +140,14 @@ Triggered: When the feet of the character animation touch the floor.
 		</property>
 		<relationship name="event">
 			<destination>{4918cfa2-a946-4312-8d74-9c7b482ddde8}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{c8f0edfb-b4dd-41bb-8887-782bdd47a3e6}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="event">
+			<destination>{081f112d-bc34-4339-9f52-3530b6510acf}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{cab8585f-4802-40ae-b8c8-8f822593975f}">

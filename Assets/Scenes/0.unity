@@ -252,7 +252,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.839527, y: 1}
+    m_SensorSize: {x: 2.1668239, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.839527, y: 1}
+    m_SensorSize: {x: 2.1668239, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20236,7 +20236,7 @@ MonoBehaviour:
   FMODWeatherEvent: {fileID: 1913780836}
   DirectionalLight: {fileID: 2091877678}
   rainScript: {fileID: 1221000390}
-  WindIntensity: 0
+  WindIntensity: 1
   RainIntensity: 0
   RainController: 0
   DirectionalLightColour: {r: 0.52156866, g: 0.25490198, b: 0.14117648, a: 1}
@@ -20699,7 +20699,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.839527, y: 1}
+    m_SensorSize: {x: 2.1668239, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -35341,7 +35341,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.839527, y: 1}
+    m_SensorSize: {x: 2.1668239, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
