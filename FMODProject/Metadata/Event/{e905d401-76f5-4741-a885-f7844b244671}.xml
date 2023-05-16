@@ -83,9 +83,6 @@ Triggered: When the feet of the character animation touch the floor.
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
-		<property name="priority">
-			<value>4</value>
-		</property>
 		<property name="dopplerScale">
 			<value>460</value>
 		</property>

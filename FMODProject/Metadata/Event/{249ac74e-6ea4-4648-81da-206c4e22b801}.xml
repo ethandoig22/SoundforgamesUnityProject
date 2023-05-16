@@ -82,9 +82,6 @@ Triggered: On Start</value>
 		<property name="isPersistent">
 			<value>true</value>
 		</property>
-		<property name="priority">
-			<value>3</value>
-		</property>
 	</object>
 	<object class="MarkerTrack" id="{f42b458f-a6e9-4f27-8f71-7afaf36633c6}" />
 	<object class="GroupTrack" id="{f2e247ea-2157-4d46-b015-ccb56d5d8c9c}">
@@ -139,6 +136,7 @@ Triggered: On Start</value>
 	</object>
 	<object class="MixerBusPanner" id="{bac17b5c-96b3-46d9-95d9-af91d0bd73e7}" />
 	<object class="EventSound" id="{882aebf2-ba81-47f7-9773-5839bd605317}">
+		<property name="name" />
 		<relationship name="event">
 			<destination>{b950c23a-e2d0-480b-b566-edfd582a507f}</destination>
 		</relationship>
@@ -155,7 +153,6 @@ Triggered: On Start</value>
 		<property name="start">
 			<value>2</value>
 		</property>
-		<property name="name" />
 		<relationship name="event">
 			<destination>{9c03c35e-2592-4c87-b58b-eaa20feb015c}</destination>
 		</relationship>
