@@ -108,7 +108,11 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 			<destination>{0c511fc9-834e-4587-a358-644985de100d}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{6ade9326-33b1-486e-8220-c460f3dc3fbf}" />
+	<object class="MultiSound" id="{6ade9326-33b1-486e-8220-c460f3dc3fbf}">
+		<relationship name="sounds">
+			<destination>{560a123c-da09-4ccb-999b-a616008c45f4}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{5a2cb667-da06-404b-8ec4-64e068d99a85}">
 		<relationship name="effects">
 			<destination>{e94fc261-0cd7-4423-af36-d21ef0903f44}</destination>
@@ -138,6 +142,14 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		<property name="overridingOutputFormat">
 			<value>1</value>
 		</property>
+	</object>
+	<object class="EventSound" id="{560a123c-da09-4ccb-999b-a616008c45f4}">
+		<property name="volume">
+			<value>-28.5</value>
+		</property>
+		<relationship name="event">
+			<destination>{04c22e7b-57d8-40a1-b2f5-7db0f415dcbb}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{e94fc261-0cd7-4423-af36-d21ef0903f44}" />
 	<object class="MixerBusEffectChain" id="{4e58694f-7796-43f2-9c9f-e35ceff69dc4}">

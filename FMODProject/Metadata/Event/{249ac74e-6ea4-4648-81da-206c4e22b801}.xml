@@ -93,6 +93,9 @@ Triggered: On Start</value>
 		</property>
 		<relationship name="modules">
 			<destination>{882aebf2-ba81-47f7-9773-5839bd605317}</destination>
+			<destination>{74e3a98e-d389-4f09-a750-11e5208321d6}</destination>
+			<destination>{2e1c833b-1925-4b79-97db-a1e7ceec61ac}</destination>
+			<destination>{ff08b604-c495-44cf-979d-2dde443ea2dd}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d60f3f9a-8342-4a53-b205-f7fe3edd9daf}</destination>
@@ -102,6 +105,9 @@ Triggered: On Start</value>
 	<object class="ParameterProxy" id="{ad58c3a7-2bc9-0263-14d6-c1fa1cb73367}">
 		<relationship name="modules">
 			<destination>{882aebf2-ba81-47f7-9773-5839bd605317}</destination>
+			<destination>{74e3a98e-d389-4f09-a750-11e5208321d6}</destination>
+			<destination>{2e1c833b-1925-4b79-97db-a1e7ceec61ac}</destination>
+			<destination>{ff08b604-c495-44cf-979d-2dde443ea2dd}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{aa8da718-ca68-44ee-b0fe-94a5a7b327b3}</destination>
@@ -133,11 +139,33 @@ Triggered: On Start</value>
 	</object>
 	<object class="MixerBusPanner" id="{bac17b5c-96b3-46d9-95d9-af91d0bd73e7}" />
 	<object class="EventSound" id="{882aebf2-ba81-47f7-9773-5839bd605317}">
+		<relationship name="event">
+			<destination>{b950c23a-e2d0-480b-b566-edfd582a507f}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{74e3a98e-d389-4f09-a750-11e5208321d6}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="event">
+			<destination>{674cc44a-ae27-47e6-b331-0eedcc65243d}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{2e1c833b-1925-4b79-97db-a1e7ceec61ac}">
 		<property name="start">
 			<value>2</value>
 		</property>
+		<property name="name" />
 		<relationship name="event">
-			<destination>{b950c23a-e2d0-480b-b566-edfd582a507f}</destination>
+			<destination>{9c03c35e-2592-4c87-b58b-eaa20feb015c}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{ff08b604-c495-44cf-979d-2dde443ea2dd}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<relationship name="event">
+			<destination>{0d35f993-c018-48de-81f9-0d8546dea856}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d60f3f9a-8342-4a53-b205-f7fe3edd9daf}">

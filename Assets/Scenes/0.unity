@@ -20236,7 +20236,7 @@ MonoBehaviour:
   FMODWeatherEvent: {fileID: 1913780836}
   DirectionalLight: {fileID: 2091877678}
   rainScript: {fileID: 1221000390}
-  WindIntensity: 1
+  WindIntensity: 0
   RainIntensity: 0
   RainController: 0
   DirectionalLightColour: {r: 0.52156866, g: 0.25490198, b: 0.14117648, a: 1}

@@ -167,10 +167,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638193159551328786
+  lastModified: 638196731424847109
   FileSizes:
   - Name: Desktop
-    Value: 1346336
+    Value: 3153120
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638193159546698089
+  lastModified: 638196731422163346
   FileSizes:
   - Name: Desktop
     Value: 4238
@@ -418,13 +418,13 @@ MonoBehaviour:
     Data4: 1278964601
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
-  MaxDistance: 10
-  Length: 0
+  MaxDistance: 3.6000001
+  Length: 20023
 --- !u!114 &-4483237052072484139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,12 +470,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
-  MaxDistance: 30
-  Length: 0
+  MaxDistance: 7
+  Length: 5500
 --- !u!114 &-4139670148003439616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
   - {fileID: -7470815133711611052}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 30
@@ -750,7 +750,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638193159551328786
+  cacheTime: 638196731424847109
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -936,7 +936,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: -8844923236937417853}
@@ -960,7 +960,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638193159546744070
+  lastModified: 638196731422228501
   FileSizes:
   - Name: Desktop
     Value: 1416
@@ -1090,10 +1090,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638193159546647935
+  lastModified: 638196731422107955
   FileSizes:
   - Name: Desktop
-    Value: 86112
+    Value: 86240
   Exists: 1
 --- !u!114 &4490606575963264758
 MonoBehaviour:
