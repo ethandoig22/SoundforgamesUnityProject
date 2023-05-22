@@ -151,6 +151,9 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{cab8585f-4802-40ae-b8c8-8f822593975f}">
+		<property name="volume">
+			<value>-21.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>

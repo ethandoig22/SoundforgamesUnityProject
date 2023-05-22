@@ -85,11 +85,18 @@ Triggered: When the droid fires a seed</value>
 	</object>
 	<object class="MarkerTrack" id="{9737319f-e4b0-494b-843b-254c642c8c7b}" />
 	<object class="GroupTrack" id="{f5db1f8e-4bb4-4bbc-9b16-4237f2600d50}">
+		<relationship name="modules">
+			<destination>{0df34f3b-c49a-4661-8988-271ed0b4c86d}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{889ecc98-ddec-46a4-b660-4977223949ed}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{2a7c138b-9f65-42fa-b5ad-8fd01bbdfeb0}" />
+	<object class="Timeline" id="{2a7c138b-9f65-42fa-b5ad-8fd01bbdfeb0}">
+		<relationship name="modules">
+			<destination>{0df34f3b-c49a-4661-8988-271ed0b4c86d}</destination>
+		</relationship>
+	</object>
 	<object class="ActionSheet" id="{f67de96a-e458-41fb-99d3-da57834e82e0}">
 		<relationship name="modules">
 			<destination>{e55b2110-0d05-4ab8-a026-c19c13e2ddb3}</destination>
@@ -113,7 +120,18 @@ Triggered: When the droid fires a seed</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6be1623d-dcf1-4531-a863-f9860c46187c}" />
+	<object class="EventSound" id="{0df34f3b-c49a-4661-8988-271ed0b4c86d}">
+		<property name="length">
+			<value>17.5</value>
+		</property>
+		<relationship name="event">
+			<destination>{556d6601-6dc8-4e49-b1ce-3da4ac3940a4}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{889ecc98-ddec-46a4-b660-4977223949ed}">
+		<property name="volume">
+			<value>-16.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>

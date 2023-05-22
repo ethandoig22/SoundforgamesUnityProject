@@ -80,7 +80,7 @@ Triggered: On Start</value>
 			<value>0</value>
 		</property>
 		<property name="maximumDistance">
-			<value>8.60000038</value>
+			<value>15</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{1c80dec4-6b27-413b-881a-28d80ad9b0ec}" />
@@ -133,14 +133,11 @@ Triggered: On Start</value>
 	</object>
 	<object class="EventMixerGroup" id="{680332a7-ed8a-4de8-b471-920c98a5abd1}">
 		<property name="volume">
-			<value>-4.5</value>
+			<value>-11.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{b9c451b3-0262-4464-8fa9-9e67018c4a6e}</destination>
-		</relationship>
 		<relationship name="effectChain">
 			<destination>{d072b996-1ce1-4b41-91f0-9380ae547952}</destination>
 		</relationship>
@@ -177,26 +174,6 @@ Triggered: On Start</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{10b6aa27-1c85-4eda-9a70-98ed3752ee16}" />
-	<object class="LFOModulator" id="{b9c451b3-0262-4464-8fa9-9e67018c4a6e}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="shape">
-			<value>6</value>
-		</property>
-		<property name="isTempoSync">
-			<value>true</value>
-		</property>
-		<property name="beats">
-			<value>0.0350000001</value>
-		</property>
-		<property name="depth">
-			<value>9</value>
-		</property>
-		<property name="direction">
-			<value>-100</value>
-		</property>
-	</object>
 	<object class="MixerBusEffectChain" id="{d072b996-1ce1-4b41-91f0-9380ae547952}">
 		<relationship name="effects">
 			<destination>{8af4cda7-a80c-4794-8bce-cf6ce8294aff}</destination>
@@ -262,7 +239,7 @@ Triggered: On Start</value>
 			<value>Dist Rolloff</value>
 		</property>
 		<property name="value">
-			<value>3</value>
+			<value>0</value>
 		</property>
 		<property name="minimumValue">
 			<value>0</value>

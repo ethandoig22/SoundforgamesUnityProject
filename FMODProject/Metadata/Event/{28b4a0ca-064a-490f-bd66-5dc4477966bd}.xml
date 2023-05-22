@@ -12,7 +12,7 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 			<value>Alerted</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0315ad32-2855-432c-8399-cc7b48807503}</destination>
@@ -71,7 +71,7 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 	</object>
 	<object class="EventAutomatableProperties" id="{628c25c5-166f-431d-8deb-5268d9659ae6}">
 		<property name="priority">
-			<value>3</value>
+			<value>4</value>
 		</property>
 		<property name="minimumDistance">
 			<value>0</value>
@@ -79,11 +79,21 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 	</object>
 	<object class="MarkerTrack" id="{b21aa61f-3fee-4228-a3ad-710df3601420}" />
 	<object class="GroupTrack" id="{082ce161-4384-4edc-920f-ebd29818c959}">
+		<relationship name="modules">
+			<destination>{272ccdf3-bf15-4212-8790-9f113cde6572}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d14e2f36-a7ee-4ae5-88a3-6a2a007b187d}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{89202315-148c-4eca-a678-97c4bceab103}" />
+	<object class="Timeline" id="{89202315-148c-4eca-a678-97c4bceab103}">
+		<relationship name="modules">
+			<destination>{272ccdf3-bf15-4212-8790-9f113cde6572}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{2a9e583d-6d1b-4f3a-8313-3117d5ff33d7}</destination>
+		</relationship>
+	</object>
 	<object class="ActionSheet" id="{9eed2d4b-7ae8-4217-9f3e-4feec521a87e}">
 		<relationship name="modules">
 			<destination>{1fdc6016-2aa5-46ac-b30f-5058049b70e9}</destination>
@@ -107,6 +117,15 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ebc4f5c4-3898-464a-b435-c23b21ab23e9}" />
+	<object class="EventSound" id="{272ccdf3-bf15-4212-8790-9f113cde6572}">
+		<property name="length">
+			<value>1.5003174603174603</value>
+		</property>
+		<property name="name" />
+		<relationship name="event">
+			<destination>{aaf6b137-e0e5-40a9-94b4-f503d27fb7a1}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{d14e2f36-a7ee-4ae5-88a3-6a2a007b187d}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -119,6 +138,20 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 		</relationship>
 		<relationship name="output">
 			<destination>{c3f11b22-96f8-471c-8dc4-f8be78ba294b}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{2a9e583d-6d1b-4f3a-8313-3117d5ff33d7}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>1.5003174603174603</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{89202315-148c-4eca-a678-97c4bceab103}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{b21aa61f-3fee-4228-a3ad-710df3601420}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{93f8c5b8-fa4f-4ed1-8b18-601f84fe516e}">

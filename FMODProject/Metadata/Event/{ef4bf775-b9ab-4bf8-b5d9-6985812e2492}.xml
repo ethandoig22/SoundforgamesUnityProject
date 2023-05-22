@@ -75,9 +75,6 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{576e3e4f-06d1-4c32-9bf0-b9142efc1d4d}">
-		<property name="priority">
-			<value>3</value>
-		</property>
 		<property name="minimumDistance">
 			<value>0</value>
 		</property>
@@ -87,11 +84,21 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 	</object>
 	<object class="MarkerTrack" id="{d9077a0d-d7bf-49a3-87d7-68a2084afecf}" />
 	<object class="GroupTrack" id="{c9c3f15b-ba46-4ddc-a6f2-cf9ba493eaf9}">
+		<relationship name="modules">
+			<destination>{368d87c3-bb16-46cf-a127-d1b7b2cb4cdc}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d31cb94d-42c7-41ea-99e7-968e0b50272b}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{cdcdd685-2392-478b-a7c9-4126a73710d5}" />
+	<object class="Timeline" id="{cdcdd685-2392-478b-a7c9-4126a73710d5}">
+		<relationship name="modules">
+			<destination>{368d87c3-bb16-46cf-a127-d1b7b2cb4cdc}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{1052be88-a4b8-4a21-ad31-9119e270dc30}</destination>
+		</relationship>
+	</object>
 	<object class="ActionSheet" id="{6f52dc9d-5e59-4f96-839e-8776c287bc39}">
 		<relationship name="modules">
 			<destination>{6ade9326-33b1-486e-8220-c460f3dc3fbf}</destination>
@@ -108,18 +115,25 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 			<destination>{0c511fc9-834e-4587-a358-644985de100d}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{6ade9326-33b1-486e-8220-c460f3dc3fbf}">
-		<relationship name="sounds">
-			<destination>{560a123c-da09-4ccb-999b-a616008c45f4}</destination>
-		</relationship>
-	</object>
+	<object class="MultiSound" id="{6ade9326-33b1-486e-8220-c460f3dc3fbf}" />
 	<object class="MixerBusEffectChain" id="{5a2cb667-da06-404b-8ec4-64e068d99a85}">
 		<relationship name="effects">
 			<destination>{e94fc261-0cd7-4423-af36-d21ef0903f44}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4803abf2-44ec-4f4f-a32c-6b9e00f9d96e}" />
+	<object class="SingleSound" id="{368d87c3-bb16-46cf-a127-d1b7b2cb4cdc}">
+		<property name="length">
+			<value>3.4698866213151929</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{3f6a44fd-22b4-4fdc-af08-67db70713c93}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{d31cb94d-42c7-41ea-99e7-968e0b50272b}">
+		<property name="volume">
+			<value>-43</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -133,6 +147,20 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 			<destination>{33318255-fc2b-4826-bf4c-176f0eef34b0}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{1052be88-a4b8-4a21-ad31-9119e270dc30}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>3.4698866213151929</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{cdcdd685-2392-478b-a7c9-4126a73710d5}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{d9077a0d-d7bf-49a3-87d7-68a2084afecf}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{15625ecb-8ca7-4fe5-9d51-379999665358}">
 		<relationship name="effects">
 			<destination>{22f9dbe2-1f12-4ee6-938e-e38d04228b2e}</destination>
@@ -142,14 +170,6 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		<property name="overridingOutputFormat">
 			<value>1</value>
 		</property>
-	</object>
-	<object class="EventSound" id="{560a123c-da09-4ccb-999b-a616008c45f4}">
-		<property name="volume">
-			<value>-28.5</value>
-		</property>
-		<relationship name="event">
-			<destination>{04c22e7b-57d8-40a1-b2f5-7db0f415dcbb}</destination>
-		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{e94fc261-0cd7-4423-af36-d21ef0903f44}" />
 	<object class="MixerBusEffectChain" id="{4e58694f-7796-43f2-9c9f-e35ceff69dc4}">

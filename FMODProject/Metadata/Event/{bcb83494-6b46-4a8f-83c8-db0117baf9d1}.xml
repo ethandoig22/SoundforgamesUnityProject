@@ -268,7 +268,7 @@ Triggered: When a seed is fired from the droid and impacts the ground</value>
 			<value>0.99999999999999989</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>1.90734863e-06</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b0200d59-0bea-4de6-bd34-3760e3f3d185}">
@@ -352,7 +352,6 @@ Triggered: When a seed is fired from the droid and impacts the ground</value>
 		<property name="name">
 			<value>Attenuation Ran</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>
@@ -361,7 +360,6 @@ Triggered: When a seed is fired from the droid and impacts the ground</value>
 		<property name="name">
 			<value>3D Attributes</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -397,7 +395,6 @@ Triggered: When a seed is fired from the droid and impacts the ground</value>
 		<property name="name">
 			<value>Overall Gain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>
