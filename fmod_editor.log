@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001120B727938 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000211E544D358 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -49,691 +49,313 @@
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000115788B42C8 : node = 000001146939F2F0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B42C8
+[LOG] SystemI::createSound                     : setdata soundi = 00000211E1ECD158 : node = 0000020EF8F83A50
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020EF7605058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000211E1ECD158
 [LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 103968
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001146939F400
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020EF8F83B60
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B42C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000211E1ECD158
 [LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000115788B6128 : node = 000001146939D4F0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B6128
+[LOG] SystemI::createSound                     : setdata soundi = 00000211E1ECDED8 : node = 0000020EF8F83550
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020EF7605058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000211E1ECDED8
 [LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 103968
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001146939D600
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020EF8F83660
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B6128
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000211E1ECDED8
+[LOG] SoundI::release                          : Ant (00000211E1ECD158)
+[LOG] SoundI::release                          :     Ant (0000020EFABD1428)
+[LOG] SoundI::release                          :     Ant (00000211E1ECD9C8)
 [LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000115788B2618 : node = 000001146939DDB0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B2618
+[LOG] SystemI::createSound                     : setdata soundi = 00000211E1ECFEE8 : node = 0000020EF8F83410
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020EF7605058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000211E1ECFEE8
 [LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
 [LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001146939DEC0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 103968
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 00000211E1ECD158 : node = 0000020EF8F83690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020EF8F83520
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000020EF7605058.  list count = 0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B6488 : node = 000001146939DEF0
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B4E98 : node = 00000112A2113760
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 1
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B7DD8 : node = 0000011215610E40
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 2
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B3038 : node = 0000011215611480
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 3
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B78C8 : node = 00000112156115C0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 4
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B2618
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B6488
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000211E1ECFEE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000211E1ECD158
 [LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 103968
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001146939E000
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020EF8F837A0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B6488
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B4E98
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112A2113870
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B4E98
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B7DD8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215610F50
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B7DD8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B3038
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611590
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B3038
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B78C8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112156116D0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B78C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000211E1ECD158
+[LOG] SoundI::release                          : Ant (00000211E1ECDED8)
+[LOG] SoundI::release                          :     Ant (0000020EF1337D88)
+[LOG] SoundI::release                          :     Ant (00000211E1ECFB88)
+[LOG] SoundI::release                          : Ant (00000211E1ECD158)
+[LOG] SoundI::release                          :     Ant (0000020EF1337568)
+[LOG] SoundI::release                          :     Ant (00000211E1EDA5F8)
+[LOG] SoundI::release                          : Ant (00000211E1ECFEE8)
+[LOG] SoundI::release                          :     Ant (0000020EF13373C8)
+[LOG] SoundI::release                          :     Ant (00000211E1ECD9C8)
 [LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000115788B7F88 : node = 0000011215612380
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B7F88
+[LOG] SystemI::createSound                     : setdata soundi = 00000211E1ECFB88 : node = 00000211E2C591E0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020EF7605058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000211E1ECFB88
 [LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 103968
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B8498 : node = 0000011215610D00
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215612490
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000211E2C592F0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 90
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B5A68 : node = 0000011215611980
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 1
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B4CE8 : node = 0000011215611700
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 2
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B51F8 : node = 0000011215611840
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 3
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B87F8 : node = 00000112156110C0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 4
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B4628 : node = 0000011215611AC0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 5
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B3F68 : node = 0000011215611C00
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 6
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B7F88
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B8498
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215610E10
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B8498
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B5A68
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611A90
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B5A68
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B4CE8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611810
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B4CE8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B51F8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611950
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B51F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B87F8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112156111D0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B87F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B4628
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611BD0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B4628
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B3F68
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611D10
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B3F68
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='gieger counter fast', format=5, channels=1, frequency=48000, lengthbytes=101568, lengthpcm=505877, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.733459.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000211E1ECFB88
+[LOG] SoundI::release                          : gieger counter fast (00000211E1ECFB88)
+[LOG] SoundI::release                          :     gieger counter fast (0000020EF14D7988)
+[LOG] SoundI::release                          :     gieger counter fast (00000211E1ECD158)
 [LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000115788B89A8 : node = 0000011215611200
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B89A8
+[LOG] SystemI::createSound                     : setdata soundi = 00000211E555FD78 : node = 00000211E2C59BE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020EF7605058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000211E555FD78
 [LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 103968
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611310
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B22B8 : node = 0000011215611FC0
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B89A8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B22B8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112156120D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000211E2C59CF0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 90
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B22B8
-[LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000115788B2E88 : node = 0000011215611D40
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B2E88
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611E50
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B36F8 : node = 0000011215612240
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B6B48 : node = 0000011215612100
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 1
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B8138 : node = 0000011215610F80
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 2
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B67E8 : node = 00000112156124C0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 3
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000115788B53A8 : node = 0000011215611340
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 4
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B2E88
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B36F8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215612350
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B36F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B6B48
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215612210
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B6B48
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B8138
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611090
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B8138
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B67E8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112156125D0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B67E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000115788B53A8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000011215611450
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000115788B53A8
-[LOG] SoundI::release                          : Ant (00000115788B42C8)
-[LOG] SoundI::release                          :     Ant (0000011475D98568)
-[LOG] SoundI::release                          :     Ant (000001120A91C078)
-[LOG] SoundI::release                          : Ant (00000115788B6128)
-[LOG] SoundI::release                          :     Ant (0000011475D98BE8)
-[LOG] SoundI::release                          :     Ant (000001120A91C228)
-[LOG] SoundI::release                          : Ant (00000115788B78C8)
-[LOG] SoundI::release                          :     Ant (000001147316FFF8)
-[LOG] SoundI::release                          :     Ant (000001120A91C8E8)
-[LOG] SoundI::release                          : Ant (00000115788B3038)
-[LOG] SoundI::release                          :     Ant (000001147316FE58)
-[LOG] SoundI::release                          :     Ant (000001120A91CDF8)
-[LOG] SoundI::release                          : Ant (00000115788B7DD8)
-[LOG] SoundI::release                          :     Ant (000001147316F7D8)
-[LOG] SoundI::release                          :     Ant (000001120A91C738)
-[LOG] SoundI::release                          : Ant (00000115788B4E98)
-[LOG] SoundI::release                          :     Ant (000001147316FB18)
-[LOG] SoundI::release                          :     Ant (000001120A91CA98)
-[LOG] SoundI::release                          : Ant (00000115788B6488)
-[LOG] SoundI::release                          :     Ant (000001147316F638)
-[LOG] SoundI::release                          :     Ant (000001120A91C3D8)
-[LOG] SoundI::release                          : Ant (00000115788B2618)
-[LOG] SoundI::release                          :     Ant (0000011475D988A8)
-[LOG] SoundI::release                          :     Ant (000001120A91CC48)
-[LOG] SoundI::release                          : Ant (00000115788B3F68)
-[LOG] SoundI::release                          :     Ant (000001149A6D7398)
-[LOG] SoundI::release                          :     Ant (000001120F6BBB78)
-[LOG] SoundI::release                          : Ant (00000115788B4628)
-[LOG] SoundI::release                          :     Ant (000001149A6D76D8)
-[LOG] SoundI::release                          :     Ant (000001120F6BBD28)
-[LOG] SoundI::release                          : Ant (00000115788B87F8)
-[LOG] SoundI::release                          :     Ant (000001149A6D7BB8)
-[LOG] SoundI::release                          :     Ant (000001120F6BB818)
-[LOG] SoundI::release                          : Ant (00000115788B51F8)
-[LOG] SoundI::release                          :     Ant (000001149A6D7538)
-[LOG] SoundI::release                          :     Ant (000001120F6BB9C8)
-[LOG] SoundI::release                          : Ant (00000115788B4CE8)
-[LOG] SoundI::release                          :     Ant (0000011499EE2BB8)
-[LOG] SoundI::release                          :     Ant (000001120F6BB158)
-[LOG] SoundI::release                          : Ant (00000115788B5A68)
-[LOG] SoundI::release                          :     Ant (0000011499EE33D8)
-[LOG] SoundI::release                          :     Ant (000001120F6BB668)
-[LOG] SoundI::release                          : Ant (00000115788B8498)
-[LOG] SoundI::release                          :     Ant (0000011499EE3238)
-[LOG] SoundI::release                          :     Ant (000001120F6BAFA8)
-[LOG] SoundI::release                          : Ant (00000115788B7F88)
-[LOG] SoundI::release                          :     Ant (0000011499EE2EF8)
-[LOG] SoundI::release                          :     Ant (000001120A91C588)
-[LOG] SoundI::release                          : Ant (00000115788B22B8)
-[LOG] SoundI::release                          :     Ant (00000112052399D8)
-[LOG] SoundI::release                          :     Ant (000001120F6BB4B8)
-[LOG] SoundI::release                          : Ant (00000115788B89A8)
-[LOG] SoundI::release                          :     Ant (000001149A6D7A18)
-[LOG] SoundI::release                          :     Ant (000001120F6BB308)
-[LOG] SoundI::release                          : Ant (00000115788B53A8)
-[LOG] SoundI::release                          :     Ant (0000011499BB5A48)
-[LOG] SoundI::release                          :     Ant (0000011577FB0638)
-[LOG] SoundI::release                          : Ant (00000115788B67E8)
-[LOG] SoundI::release                          :     Ant (0000011499BB5568)
-[LOG] SoundI::release                          :     Ant (0000011577FB0CF8)
-[LOG] SoundI::release                          : Ant (00000115788B8138)
-[LOG] SoundI::release                          :     Ant (0000011499BB58A8)
-[LOG] SoundI::release                          :     Ant (0000011577FB0488)
-[LOG] SoundI::release                          : Ant (00000115788B6B48)
-[LOG] SoundI::release                          :     Ant (000001120523A058)
-[LOG] SoundI::release                          :     Ant (0000011577FB02D8)
-[LOG] SoundI::release                          : Ant (00000115788B36F8)
-[LOG] SoundI::release                          :     Ant (0000011205239B78)
-[LOG] SoundI::release                          :     Ant (0000011577FB0B48)
-[LOG] SoundI::release                          : Ant (00000115788B2E88)
-[LOG] SoundI::release                          :     Ant (000001120523A538)
-[LOG] SoundI::release                          :     Ant (0000011577FB0998)
-[LOG] SystemI::createSound                     : filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000011216AF2598 : node = 00000112048FD010
-[LOG] SystemI::createSound                     : add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000011216AF2598
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112048FD120
-[LOG] SystemI::createSound                     :     filename = FMODProject/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 0000011216AF3168 : node = 00000112048FDB50
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001157366BC78.  list count = 0
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000011216AF2598
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000011216AF3168
-[LOG] SystemI::createSoundInternal             :     Create name='FMODProject/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3472800
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 104192
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000112048FDC60
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ant', format=5, channels=2, frequency=48000, lengthbytes=9056, lengthpcm=16720, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000011216AF3168
-[LOG] SoundI::release                          : Ant (0000011216AF3168)
-[LOG] SoundI::release                          :     Ant (0000011475D988A8)
-[LOG] SoundI::release                          :     Ant (0000011216809248)
-[LOG] SoundI::release                          : Ant (0000011216AF2598)
-[LOG] SoundI::release                          :     Ant (0000011475D98568)
-[LOG] SoundI::release                          :     Ant (0000011216809098)
-[LOG] SoundI::release                          : 215006__stevemeli__flowing-sand (00000114995CFCC8)
-[LOG] SoundI::release                          :     215006__stevemeli__flowing-sand (0000011473172318)
-[LOG] SoundI::release                          :     215006__stevemeli__flowing-sand (000001149AE7E058)
-[LOG] SoundI::release                          : 527281__dlgebert__monologue-wind (00000114995CFE78)
-[LOG] SoundI::release                          :     527281__dlgebert__monologue-wind (0000011473171FD8)
-[LOG] SoundI::release                          :     527281__dlgebert__monologue-wind (000001149AE7DCF8)
-[LOG] SoundI::release                          : Rain background (000001121811BEA8)
-[LOG] SoundI::release                          :     Rain background (0000011475D98228)
-[LOG] SoundI::release                          :     Rain background (000001149AE7DB48)
-[LOG] SoundI::release                          :  (00000114995B6AD8)
-[LOG] SoundI::release                          :     403162__fallujahqc__footstep_metal (0000011498FEAC88)
-[LOG] SoundI::release                          :  (00000114761FD518)
-[LOG] SoundI::release                          :     Audio 1 (000001149BA336A8)
-[LOG] SoundI::release                          :  (00000114995B6C48)
-[LOG] SoundI::release                          :     Audio 2 (0000011578498E18)
-[LOG] SoundI::release                          :  (00000112154BC598)
-[LOG] SoundI::release                          :     Audio 3 (000001149BA33508)
-[LOG] SoundI::release                          :  (000001120336A408)
-[LOG] SoundI::release                          :     Audio 4 (0000011215E68228)
-[LOG] SoundI::release                          :  (0000011577E73DB8)
-[LOG] SoundI::release                          :     Fire (0000011577DCA068)
-[LOG] SoundI::release                          :  (00000114702607C8)
-[LOG] SoundI::release                          :     Hit plant (000001157809D688)
-[LOG] SoundI::release                          :  (0000011577E737F8)
-[LOG] SoundI::release                          :     Hit Enemy (0000011577DCABC8)
-[LOG] SoundI::release                          :  (0000011577D79648)
-[LOG] SoundI::release                          :     181917__lolamadeus__jelly-mangling-on-plate (000001147329B088)
-[LOG] SoundI::release                          :  (0000011203BD4988)
-[LOG] SoundI::release                          :     ChitChat-01 (000001147333EC98)
-[LOG] SoundI::release                          :  (000001120318A4C8)
-[LOG] SoundI::release                          :     ChitChatExtra-01 (00000114995F08E8)
-[LOG] SoundI::release                          :  (000001120318A078)
-[LOG] SoundI::release                          :     ChitChatExtra-02 (00000114995F1AC8)
-[LOG] SoundI::release                          :  (0000011577EB9FF8)
-[LOG] SoundI::release                          :     ChitChatExtra-03 (00000112159644E8)
-[LOG] SoundI::release                          :  (0000011216108C48)
-[LOG] SoundI::release                          :     ChitChat-02 (000001149A344E08)
-[LOG] SoundI::release                          :  (0000011577E73C48)
-[LOG] SoundI::release                          :     ChitChat-03 (0000011577DCA6E8)
-[LOG] SoundI::release                          :  (000001147025FF28)
-[LOG] SoundI::release                          :     ChitChat-04 (00000112159641A8)
-[LOG] SoundI::release                          :  (0000011577D79928)
-[LOG] SoundI::release                          :     ChitChat-06 (000001147329AD48)
-[LOG] SoundI::release                          :  (0000011577E74378)
-[LOG] SoundI::release                          :     Hit rock (000001157809D348)
-[LOG] SoundI::release                          :  (000001120318A358)
-[LOG] SoundI::release                          :     T8ZFTMF-fire (0000011577E33398)
-[LOG] SoundI::release                          :  (0000011470260098)
-[LOG] SoundI::release                          :     Hit sand (0000011215963308)
-[LOG] SoundI::release                          :  (00000114995B6238)
-[LOG] SoundI::release                          :     Stone Footsteps-02 (0000011578498798)
-[LOG] SoundI::release                          :  (00000114995B6DB8)
-[LOG] SoundI::release                          :     Stone Footsteps-03 (0000011498FEAE28)
-[LOG] SoundI::release                          :  (0000011203369FB8)
-[LOG] SoundI::release                          :     Stone Footsteps-01 (00000112035ADA38)
-[LOG] SoundI::release                          :  (0000011470260208)
-[LOG] SoundI::release                          :     death (000001157809C648)
-[LOG] SoundI::release                          :  (0000011470260658)
-[LOG] SoundI::release                          :     Hit metal (000001157809C308)
-[LOG] SoundI::release                          :  (0000011203BD4AF8)
-[LOG] SoundI::release                          :     growth (000001147333E2D8)
-[LOG] SoundI::release                          :  (0000011470260938)
-[LOG] SoundI::release                          :     Alert-01 (000001157809C7E8)
-[LOG] SoundI::release                          :  (000001147025FC48)
-[LOG] SoundI::release                          :     Alert-02 (000001157809DEA8)
-[LOG] SoundI::release                          :  (0000011216109098)
-[LOG] SoundI::release                          :     Alert-03 (000001147334EA68)
-[LOG] SoundI::release                          :  (0000011203BD5508)
-[LOG] SoundI::release                          :     Alert-04 (000001147333E478)
-[LOG] SoundI::release                          :  (00000112161087F8)
-[LOG] SoundI::release                          :     Alert Background (000001149A3442A8)
-[LOG] SoundI::release                          :  (0000011203189C28)
-[LOG] SoundI::release                          :     Lasers-01 (00000114995F05A8)
-[LOG] SoundI::release                          :  (00000112031890A8)
-[LOG] SoundI::release                          :     Lasers-02 (0000011577E31998)
-[LOG] SoundI::release                          :  (0000011203BD4F48)
-[LOG] SoundI::release                          :     Lasers-03 (0000011578B4FDC8)
-[LOG] SoundI::release                          :  (000001120318AA88)
-[LOG] SoundI::release                          :     Lasers-04 (00000112049A0558)
-[LOG] SoundI::release                          :  (0000011577D794D8)
-[LOG] SoundI::release                          :     Lasers-05 (000001120384A568)
-[LOG] SoundI::release                          :  (0000011577EB9E88)
-[LOG] SoundI::release                          :     Lasers-06 (00000112159634A8)
-[LOG] SoundI::release                          :  (00000114995B6688)
-[LOG] SoundI::release                          :     Step 1 (0000011578498118)
-[LOG] SoundI::release                          :  (0000011203369718)
-[LOG] SoundI::release                          :     Step 2 (000001149BA33D28)
-[LOG] SoundI::release                          :  (00000114995B6518)
-[LOG] SoundI::release                          :     Step 3 (0000011578498458)
-[LOG] SoundI::release                          :  (0000011203369E48)
-[LOG] SoundI::release                          :     Step 4 (0000011215E68088)
-[LOG] SoundI::release                          :  (0000011203369888)
-[LOG] SoundI::release                          :     Step 5 (00000112035AD898)
-[LOG] SoundI::release                          :  (000001120336A128)
-[LOG] SoundI::release                          :     Step 6 (000001149BA339E8)
-[LOG] SoundI::release                          :  (00000114995B67F8)
-[LOG] SoundI::release                          :     Step 7 (000001149BA33EC8)
-[LOG] SoundI::release                          :  (000001120318A918)
-[LOG] SoundI::release                          :     SeedShoot-01 (000001120499EE98)
-[LOG] SoundI::release                          :  (0000011577EB9A38)
-[LOG] SoundI::release                          :     SeedShoot-02 (00000112159649C8)
-[LOG] SoundI::release                          :  (0000011577E73AD8)
-[LOG] SoundI::release                          :     SeedShoot-03 (0000011577DC9508)
-[LOG] SoundI::release                          :  (0000011577E73F28)
-[LOG] SoundI::release                          :     SeedShoot-04 (000001157809DD08)
-[LOG] SoundI::release                          :  (0000011577D797B8)
-[LOG] SoundI::release                          :     SeedShoot-05 (000001147329B8A8)
-[LOG] SoundI::release                          :  (0000011577EB9308)
-[LOG] SoundI::release                          :     pickup (0000011215963648)
-[LOG] SoundI::release                          :  (00000112161083A8)
-[LOG] SoundI::release                          :     Rattle Snake -01 (000001149A344C68)
-[LOG] SoundI::release                          :  (0000011203BD50B8)
-[LOG] SoundI::release                          :     Rattle Snake -02 (000001147329B228)
-[LOG] SoundI::release                          :  (000001120318AD68)
-[LOG] SoundI::release                          :     Vulture -01 (000001120499F6B8)
-[LOG] SoundI::release                          :  (0000011577EB9BA8)
-[LOG] SoundI::release                          :     Vulture -02 (00000112159637E8)
-[LOG] SoundI::release                          :  (0000011203189948)
-[LOG] SoundI::release                          :     64544__benboncan__tawny-owls-2 (00000114995F1448)
-[LOG] SoundI::release                          :  (000001120318A638)
-[LOG] SoundI::release                          :     Audio 1 (000001120499F9F8)
-[LOG] SoundI::release                          :  (0000011203189F08)
-[LOG] SoundI::release                          :     Audio 2 (00000114995F1788)
-[LOG] SoundI::release                          :  (000001147025FDB8)
-[LOG] SoundI::release                          :     Audio 5 (000001157809D828)
-[LOG] SoundI::release                          :  (00000112033699F8)
-[LOG] SoundI::release                          :     365075__justiiiiin__crickets (0000011203DB4878)
-[LOG] SoundI::release                          :  (0000011577E73688)
-[LOG] SoundI::release                          :     Ant Hive (0000011577DCB248)
-[LOG] SoundI::release                          :  (0000011203BD5678)
-[LOG] SoundI::release                          :     Swapping Background (0000011578B4FA88)
-[LOG] SoundI::release                          :  (0000011577E74098)
-[LOG] SoundI::release                          :     gieger counter slow (0000011577DC9D28)
-[LOG] SoundI::release                          :  (0000011577D79368)
-[LOG] SoundI::release                          :     Scanning (000001147329B3C8)
-[LOG] SoundI::release                          :  (0000011577EB98C8)
-[LOG] SoundI::release                          :     Scanning -  1 (00000112049A0898)
-[LOG] SoundI::release                          :  (0000011203BD4DD8)
-[LOG] SoundI::release                          :     Scanning -  2 (000001147333E138)
-[LOG] SoundI::release                          :  (000001120318A7A8)
-[LOG] SoundI::release                          :     Scanning -  3 (00000112049A0078)
-[LOG] SoundI::release                          :  (0000011203BD5228)
-[LOG] SoundI::release                          :     Scanning -  4 (0000011578B4F268)
-[LOG] SoundI::release                          :  (0000011216108518)
-[LOG] SoundI::release                          :     Scanning -  5 (000001149A344108)
-[LOG] SoundI::release                          :  (0000011577EB9D18)
-[LOG] SoundI::release                          :     Rotate (000001120499F038)
-[LOG] SoundI::release                          :  (0000011216108F28)
-[LOG] SoundI::release                          :     Lightning-02 (000001149A344788)
-[LOG] SoundI::release                          :  (0000011216108688)
-[LOG] SoundI::release                          :     Lightning-03 (0000011577DCA3A8)
-[LOG] SoundI::release                          :  (000001120318ABF8)
-[LOG] SoundI::release                          :     Lightning-04 (00000114995F1108)
-[LOG] SoundI::release                          :  (00000114702604E8)
-[LOG] SoundI::release                          :     Water Droplet - -01 (000001157809DB68)
-[LOG] SoundI::release                          :  (0000011203189668)
-[LOG] SoundI::release                          :     Water Droplet - -02 (00000112049A0A38)
-[LOG] SoundI::release                          :  (0000011216108968)
-[LOG] SoundI::release                          :     Water Droplet - -03 (000001147334F288)
-[LOG] SoundI::release                          :  (0000011203BD5398)
-[LOG] SoundI::release                          :     Water Droplet - -04 (0000011578B4FC28)
-[LOG] SoundI::release                          :  (0000011203188F38)
-[LOG] SoundI::release                          :     Water Droplet - -05 (00000114995F0748)
-[LOG] SoundI::release                          :  (0000011577E74208)
-[LOG] SoundI::release                          :     Water Droplet - -06 (0000011577DCA548)
-[LOG] SoundI::release                          :  (00000112031897D8)
-[LOG] SoundI::release                          :     Water Droplet - -07 (00000114995F0F68)
-[LOG] SoundI::release                          :  (0000011203189388)
-[LOG] SoundI::release                          :     Water Droplet - -08 (00000112049A0BD8)
-[LOG] SoundI::release                          :  (0000011577EB9758)
-[LOG] SoundI::release                          :     Water Droplet - -09 (000001120499F858)
-[LOG] SoundI::release                          :  (0000011203369CD8)
-[LOG] SoundI::release                          :     Water Droplet - -10 (000001120384A228)
-[LOG] SoundI::release                          :  (0000011216108DB8)
-[LOG] SoundI::release                          :     Water Droplet - -11 (000001147334F428)
-[LOG] SoundI::release                          :  (0000011577EB95E8)
-[LOG] SoundI::release                          :     Water Droplet - -12 (0000011215962E28)
-[LOG] SoundI::release                          :  (0000011577E73968)
-[LOG] SoundI::release                          :     Water Droplet - -13 (0000011577DC99E8)
-[LOG] SoundI::release                          :  (0000011203369B68)
-[LOG] SoundI::release                          :     Water Droplet - -14 (0000011203DB4BB8)
-[LOG] SoundI::release                          :  (0000011216108AD8)
-[LOG] SoundI::release                          :     Water Droplet - -15 (000001147334F5C8)
-[LOG] SoundI::release                          :  (000001120336A298)
-[LOG] SoundI::release                          :     Water Droplet - -16 (00000114BEFB2058)
-[LOG] SoundI::release                          :  (0000011203BD4C68)
-[LOG] SoundI::release                          :     Water Droplet - -17 (0000011578B4F748)
-[LOG] SoundI::release                          :  (0000011577EB9478)
-[LOG] SoundI::release                          :     digging 2 (0000011215964688)
-[LOG] SoundI::release                          :  (0000011470260378)
-[LOG] SoundI::release                          :     digging (000001157809CB28)
-[LOG] SoundI::release                          :  (0000011203189D98)
-[LOG] SoundI::release                          :     fly (00000114995F12A8)
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='gieger counter fast', format=5, channels=1, frequency=48000, lengthbytes=101568, lengthpcm=505877, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.733459.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000211E555FD78
+[LOG] SoundI::release                          : gieger counter fast (00000211E555FD78)
+[LOG] SoundI::release                          :     gieger counter fast (00000211C342C408)
+[LOG] SoundI::release                          :     gieger counter fast (00000211E555E0C8)
+[LOG] SoundI::release                          : 215006__stevemeli__flowing-sand (00000211E22B7818)
+[LOG] SoundI::release                          :     215006__stevemeli__flowing-sand (00000211C342C5A8)
+[LOG] SoundI::release                          :     215006__stevemeli__flowing-sand (00000211E22B3B58)
+[LOG] SoundI::release                          : 527281__dlgebert__monologue-wind (00000211E22B74B8)
+[LOG] SoundI::release                          :     527281__dlgebert__monologue-wind (0000020EF06C3898)
+[LOG] SoundI::release                          :     527281__dlgebert__monologue-wind (00000211E22B9B88)
+[LOG] SoundI::release                          : Rain background (00000211E22B5D18)
+[LOG] SoundI::release                          :     Rain background (00000211C342C0C8)
+[LOG] SoundI::release                          :     Rain background (00000211E22B4218)
+[LOG] SoundI::release                          :  (00000211DBC169D8)
+[LOG] SoundI::release                          :     403162__fallujahqc__footstep_metal (0000020EF8488068)
+[LOG] SoundI::release                          :  (00000211DBC18AE8)
+[LOG] SoundI::release                          :     Audio 1 (0000020EF6CC1AB8)
+[LOG] SoundI::release                          :  (00000211DBC15FC8)
+[LOG] SoundI::release                          :     Audio 2 (0000020EF8488888)
+[LOG] SoundI::release                          :  (00000211DBC17278)
+[LOG] SoundI::release                          :     Audio 3 (0000020EF6CC2138)
+[LOG] SoundI::release                          :  (00000211DBC176C8)
+[LOG] SoundI::release                          :     Audio 4 (0000020EF3BA10A8)
+[LOG] SoundI::release                          :  (00000211DC353A48)
+[LOG] SoundI::release                          :     Fire (0000020EF6B4F728)
+[LOG] SoundI::release                          :  (00000211DC3559E8)
+[LOG] SoundI::release                          :     Hit plant (0000020EF09997E8)
+[LOG] SoundI::release                          :  (00000211DC355148)
+[LOG] SoundI::release                          :     Hit Enemy (0000020EF0998C88)
+[LOG] SoundI::release                          :  (00000211DBC17108)
+[LOG] SoundI::release                          :     181917__lolamadeus__jelly-mangling-on-plate (00000211DD0CA708)
+[LOG] SoundI::release                          :  (00000211DBC16CB8)
+[LOG] SoundI::release                          :     ChitChat-01 (00000211DC933218)
+[LOG] SoundI::release                          :  (00000211E1D89148)
+[LOG] SoundI::release                          :     ChitChatExtra-01 (0000020EF14D5908)
+[LOG] SoundI::release                          :  (00000211E1D8AE08)
+[LOG] SoundI::release                          :     ChitChatExtra-02 (0000020EF14D5C48)
+[LOG] SoundI::release                          :  (00000211E1D8A6D8)
+[LOG] SoundI::release                          :     ChitChatExtra-03 (0000020EF73873F8)
+[LOG] SoundI::release                          :  (00000211DC353BB8)
+[LOG] SoundI::release                          :     ChitChat-02 (0000020EEDF2C518)
+[LOG] SoundI::release                          :  (00000211DC353D28)
+[LOG] SoundI::release                          :     ChitChat-03 (0000020EF0999168)
+[LOG] SoundI::release                          :  (00000211DC352068)
+[LOG] SoundI::release                          :     ChitChat-04 (0000020EF766FA58)
+[LOG] SoundI::release                          :  (00000211DBC19388)
+[LOG] SoundI::release                          :     ChitChat-06 (00000211DD6AE7C8)
+[LOG] SoundI::release                          :  (00000211DC3552B8)
+[LOG] SoundI::release                          :     Hit rock (0000020EF0998948)
+[LOG] SoundI::release                          :  (00000211E1D8BAF8)
+[LOG] SoundI::release                          :     T8ZFTMF-fire (0000020EF14D40A8)
+[LOG] SoundI::release                          :  (00000211DC3521D8)
+[LOG] SoundI::release                          :     Hit sand (0000020EF7670278)
+[LOG] SoundI::release                          :  (00000211DBC190A8)
+[LOG] SoundI::release                          :     Stone Footsteps-02 (0000020EF8487D28)
+[LOG] SoundI::release                          :  (00000211DBC19948)
+[LOG] SoundI::release                          :     Stone Footsteps-03 (0000020EF8487EC8)
+[LOG] SoundI::release                          :  (00000211DBC183B8)
+[LOG] SoundI::release                          :     Stone Footsteps-01 (00000211C840F478)
+[LOG] SoundI::release                          :  (00000211DC3524B8)
+[LOG] SoundI::release                          :     death (0000020EF0998468)
+[LOG] SoundI::release                          :  (00000211DC354178)
+[LOG] SoundI::release                          :     Hit metal (0000020EF0999308)
+[LOG] SoundI::release                          :  (00000211DBC16868)
+[LOG] SoundI::release                          :     growth (00000211DD6AEB08)
+[LOG] SoundI::release                          :  (00000211DC355428)
+[LOG] SoundI::release                          :     Alert-01 (0000020EF0999CC8)
+[LOG] SoundI::release                          :  (00000211DC355B58)
+[LOG] SoundI::release                          :     Alert-02 (0000020EF766FD98)
+[LOG] SoundI::release                          :  (00000211DC3542E8)
+[LOG] SoundI::release                          :     Alert-03 (0000020EEDF2BB58)
+[LOG] SoundI::release                          :  (00000211DBC173E8)
+[LOG] SoundI::release                          :     Alert-04 (00000211DC932ED8)
+[LOG] SoundI::release                          :  (00000211DC354CF8)
+[LOG] SoundI::release                          :     Alert Background (0000020EEDF2C038)
+[LOG] SoundI::release                          :  (00000211E1D8A568)
+[LOG] SoundI::release                          :     Lasers-01 (0000020EF14D6FC8)
+[LOG] SoundI::release                          :  (00000211E1D89B58)
+[LOG] SoundI::release                          :     Lasers-02 (0000020EF14D6128)
+[LOG] SoundI::release                          :  (00000211DC354738)
+[LOG] SoundI::release                          :     Lasers-03 (0000020EF10BC3D8)
+[LOG] SoundI::release                          :  (00000211E1D89FA8)
+[LOG] SoundI::release                          :     Lasers-04 (0000020EF73863B8)
+[LOG] SoundI::release                          :  (00000211DBC17C88)
+[LOG] SoundI::release                          :     Lasers-05 (00000211DD0CAF28)
+[LOG] SoundI::release                          :  (00000211DC352798)
+[LOG] SoundI::release                          :     Lasers-06 (0000020EF7670A98)
+[LOG] SoundI::release                          :  (00000211DBC18978)
+[LOG] SoundI::release                          :     Step 1 (0000020EF6CC2618)
+[LOG] SoundI::release                          :  (00000211DBC18C58)
+[LOG] SoundI::release                          :     Step 2 (0000020EF3BA0D68)
+[LOG] SoundI::release                          :  (00000211DBC18DC8)
+[LOG] SoundI::release                          :     Step 3 (0000020EF8488548)
+[LOG] SoundI::release                          :  (00000211DBC17838)
+[LOG] SoundI::release                          :     Step 4 (0000020EF3BA1248)
+[LOG] SoundI::release                          :  (00000211DBC179A8)
+[LOG] SoundI::release                          :     Step 5 (0000020EF3BA0A28)
+[LOG] SoundI::release                          :  (00000211DBC18698)
+[LOG] SoundI::release                          :     Step 6 (0000020EF3BA0F08)
+[LOG] SoundI::release                          :  (00000211DBC17558)
+[LOG] SoundI::release                          :     Step 7 (0000020EF6CC2478)
+[LOG] SoundI::release                          :  (00000211E1D8C228)
+[LOG] SoundI::release                          :     SeedShoot-01 (0000020EF7386898)
+[LOG] SoundI::release                          :  (00000211DC352348)
+[LOG] SoundI::release                          :     SeedShoot-02 (0000020EF766F718)
+[LOG] SoundI::release                          :  (00000211DC351D88)
+[LOG] SoundI::release                          :     SeedShoot-03 (0000020EF6B50F88)
+[LOG] SoundI::release                          :  (00000211DC353E98)
+[LOG] SoundI::release                          :     SeedShoot-04 (0000020EF0998AE8)
+[LOG] SoundI::release                          :  (00000211DBC180D8)
+[LOG] SoundI::release                          :     SeedShoot-05 (00000211DD6AE148)
+[LOG] SoundI::release                          :  (00000211DC352908)
+[LOG] SoundI::release                          :     pickup (0000020EF766F578)
+[LOG] SoundI::release                          :  (00000211DC353318)
+[LOG] SoundI::release                          :     Rattle Snake -01 (0000020EF6B500E8)
+[LOG] SoundI::release                          :  (00000211DBC166F8)
+[LOG] SoundI::release                          :     Rattle Snake -02 (00000211DD6AECA8)
+[LOG] SoundI::release                          :  (00000211E1D8AB28)
+[LOG] SoundI::release                          :     Vulture -01 (0000020EF14D5428)
+[LOG] SoundI::release                          :  (00000211E1D88FD8)
+[LOG] SoundI::release                          :     Vulture -02 (0000020EF7386F18)
+[LOG] SoundI::release                          :  (00000211E1D8B988)
+[LOG] SoundI::release                          :     64544__benboncan__tawny-owls-2 (0000020EF14D6E28)
+[LOG] SoundI::release                          :  (00000211E1D8B258)
+[LOG] SoundI::release                          :     Audio 1 (0000020EF14D55C8)
+[LOG] SoundI::release                          :  (00000211E1D8B818)
+[LOG] SoundI::release                          :     Audio 2 (0000020EF14D48C8)
+[LOG] SoundI::release                          :  (00000211DC355708)
+[LOG] SoundI::release                          :     Audio 5 (0000020EF7670758)
+[LOG] SoundI::release                          :  (00000211DBC162A8)
+[LOG] SoundI::release                          :     365075__justiiiiin__crickets (00000211C840F7B8)
+[LOG] SoundI::release                          :  (00000211DC3538D8)
+[LOG] SoundI::release                          :     Ant Hive (0000020EF6B50908)
+[LOG] SoundI::release                          :  (00000211DC3531A8)
+[LOG] SoundI::release                          :     Swapping Background (0000020EF10BC238)
+[LOG] SoundI::release                          :  (00000211DC3535F8)
+[LOG] SoundI::release                          :     gieger counter slow (0000020EF6B4F8C8)
+[LOG] SoundI::release                          :  (00000211DBC19218)
+[LOG] SoundI::release                          :     Scanning (00000211DD0CABE8)
+[LOG] SoundI::release                          :  (00000211E1D8C678)
+[LOG] SoundI::release                          :     Scanning -  1 (0000020EF73878D8)
+[LOG] SoundI::release                          :  (00000211DBC16B48)
+[LOG] SoundI::release                          :     Scanning -  2 (00000211DD6AE968)
+[LOG] SoundI::release                          :  (00000211E1D8B6A8)
+[LOG] SoundI::release                          :     Scanning -  3 (0000020EF7387258)
+[LOG] SoundI::release                          :  (00000211DC3545C8)
+[LOG] SoundI::release                          :     Scanning -  4 (0000020EF10BCA58)
+[LOG] SoundI::release                          :  (00000211DC353488)
+[LOG] SoundI::release                          :     Scanning -  5 (0000020EF6B505C8)
+[LOG] SoundI::release                          :  (00000211E1D8C958)
+[LOG] SoundI::release                          :     Rotate (0000020EF7386218)
+[LOG] SoundI::release                          :  (00000211DC3548A8)
+[LOG] SoundI::release                          :     Lightning-02 (0000020EF6B4FC08)
+[LOG] SoundI::release                          :  (00000211DC355878)
+[LOG] SoundI::release                          :     Lightning-03 (0000020EF6B4FDA8)
+[LOG] SoundI::release                          :  (00000211E1D8A848)
+[LOG] SoundI::release                          :     Lightning-04 (0000020EF14D67A8)
+[LOG] SoundI::release                          :  (00000211DC352628)
+[LOG] SoundI::release                          :     Water Droplet - -01 (0000020EF766F8B8)
+[LOG] SoundI::release                          :  (00000211E1D8A288)
+[LOG] SoundI::release                          :     Water Droplet - -02 (0000020EF73866F8)
+[LOG] SoundI::release                          :  (00000211DC351EF8)
+[LOG] SoundI::release                          :     Water Droplet - -03 (0000020EF10BC578)
+[LOG] SoundI::release                          :  (00000211DBC17DF8)
+[LOG] SoundI::release                          :     Water Droplet - -04 (00000211DC9336F8)
+[LOG] SoundI::release                          :  (00000211E1D89598)
+[LOG] SoundI::release                          :     Water Droplet - -05 (0000020EF14D5DE8)
+[LOG] SoundI::release                          :  (00000211DC354B88)
+[LOG] SoundI::release                          :     Water Droplet - -06 (0000020EF6B4F3E8)
+[LOG] SoundI::release                          :  (00000211E1D8AC98)
+[LOG] SoundI::release                          :     Water Droplet - -07 (0000020EF14D6AE8)
+[LOG] SoundI::release                          :  (00000211E1D8CAC8)
+[LOG] SoundI::release                          :     Water Droplet - -08 (0000020EF14D4248)
+[LOG] SoundI::release                          :  (00000211E1D8B538)
+[LOG] SoundI::release                          :     Water Droplet - -09 (0000020EF7386A38)
+[LOG] SoundI::release                          :  (00000211DBC17B18)
+[LOG] SoundI::release                          :     Water Droplet - -10 (00000211DD0CB268)
+[LOG] SoundI::release                          :  (00000211DC354FD8)
+[LOG] SoundI::release                          :     Water Droplet - -11 (0000020EEDF2BE98)
+[LOG] SoundI::release                          :  (00000211E1D8A3F8)
+[LOG] SoundI::release                          :     Water Droplet - -12 (0000020EF766F3D8)
+[LOG] SoundI::release                          :  (00000211DC354E68)
+[LOG] SoundI::release                          :     Water Droplet - -13 (0000020EF6B50768)
+[LOG] SoundI::release                          :  (00000211DBC16588)
+[LOG] SoundI::release                          :     Water Droplet - -14 (00000211C840F958)
+[LOG] SoundI::release                          :  (00000211DC352D58)
+[LOG] SoundI::release                          :     Water Droplet - -15 (0000020EF10BC098)
+[LOG] SoundI::release                          :  (00000211DBC16F98)
+[LOG] SoundI::release                          :     Water Droplet - -16 (00000211C840FAF8)
+[LOG] SoundI::release                          :  (00000211DBC17F68)
+[LOG] SoundI::release                          :     Water Droplet - -17 (00000211DC9329F8)
+[LOG] SoundI::release                          :  (00000211E1D89E38)
+[LOG] SoundI::release                          :     digging 2 (0000020EF7670418)
+[LOG] SoundI::release                          :  (00000211DC355598)
+[LOG] SoundI::release                          :     digging (0000020EF0999B28)
+[LOG] SoundI::release                          :  (00000211E1D89878)
+[LOG] SoundI::release                          :     fly (0000020EF14D7648)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -744,3 +366,12 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
